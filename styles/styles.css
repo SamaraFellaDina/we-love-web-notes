@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'poppins';
+    src: 
+    url('...\assets\docs\fonts\Poppins-Regular.woff2')format('woff2'),
+    url('...\assets\docs\fonts\Poppins-Regular.woff')format('woff'),
+    url('...\assets\docs\fonts\Poppins-Regular.ttf')format('truetype');
+    
+}
+
+:root {
+    --primairy-color-1:#042940;
+    --primairy-color-2:#F1F1FF;
+
+    --secundairy-color-1:#D6D58E;
+    --secundairy-color-2:#005C53;
+
+    --background-color-1:#DBF227;
+    --background-color-2:#002424;
+}
+
+* {
+    font-family: "poppins", sans-serif;
+}
+
+header {
+    background: var(--primairy-color-1);
+    color:var(--secundairy-color-1);
+    font-size: 1em;
+    display: flex;
+}
+
+button {
+    border-style: none;
+    cursor: pointer;
+}
+
+header h1 {
+    margin-block-start: 0.0em;
+    margin-block-end: 0.0em;
+    padding: 1em;
+}
+
+header button {
+    position: absolute;
+    right:0;
+    background: none;
+    width: auto;
+    height: 50%;
+
+}
+
+body {
+    background-color: var(--background-color-1);
+    margin: 0;
+    font-size: 1em
+
+}
+
+main {
+    margin: 0 0 3em 3em ;
+}
+
+h1, h2, h3, h4, h5, p {
+    max-width: 600px ;
+}

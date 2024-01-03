@@ -1,10 +1,9 @@
 @font-face {
-    font-family: 'poppins';
+    font-family: "poppins";
     src: 
-    url('...\assets\docs\fonts\Poppins-Regular.woff2')format('woff2'),
-    url('...\assets\docs\fonts\Poppins-Regular.woff')format('woff'),
-    url('...\assets\docs\fonts\Poppins-Regular.ttf')format('truetype');
-    
+    url('\assets\docs\fonts\Poppins-Regular.woff2')format('woff2'),
+    url('\assets\docs\fonts\Poppins-Regular.woff')format('woff'),
+    url('\assets\docs\fonts\Poppins-Regular.ttf')format('truetype');  
 }
 
 :root {
@@ -94,12 +93,10 @@ h1, h2, h3, h4, h5, p {
 
 .lichtingen {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: center;
-    align-items: baseline;
+    gap: .7em;
     flex-wrap: wrap;
-    gap: 1em;
-
 }
 
 .lichtingen > div {
@@ -108,8 +105,13 @@ h1, h2, h3, h4, h5, p {
 
     cursor: pointer;
     transition: var(--regular-transition);
-    margin: 1em 0 1em 0;
     padding: 1em;
+    height: 17em;
+    align-items: center;
+}
+
+.lichtingen div {
+display: flex;
 }
 
 .lichtingen h2,
@@ -130,6 +132,15 @@ h1, h2, h3, h4, h5, p {
     text-decoration: none;
 }
 
+.lichtingen .intro {
+    background-color: var(--primairy-color-1);
+}
+
+.lichtingen .intro > div:hover {
+    background-color: none;
+    padding: none;
+}
+
 .tags-lichtingen-important {
     background-color: var(--background-color-1);
     color: var(--primairy-color-1);    
@@ -137,9 +148,9 @@ h1, h2, h3, h4, h5, p {
     font-size: .7em;
 }
 
-.tags-lichtingen {
+.lichtingen .tags-lichtingen {
     color: var(--background-color-1);
-
+    display: block;
 }
 
 .tags-lichtingen p {
